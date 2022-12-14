@@ -42,8 +42,8 @@ def read():  # Name of the method
         Result['ID'] = row[2]
         #Results.append(Result)
         html = html + \
-            (f"<tr style='border: 1px solid'><th >{Result['Name']}</th> <th >{Result['Email']}</th></tr> <br>")
-    html = f"<table style='border: 1px solid'; width=100%; border-collapse: collapse;><tr style='border: 1px solid'><th  style='border: 1px solid'>Name</th><th style='border: 1px solid'>Email</th></tr>{html}</table>"
+            (f"<tr style='border: 2px solid'><th >{Result['Name']}</th> <th >{Result['Email']}</th></tr> <br>")
+    html = f"<table style='border: 1px solid'; width=100%; background-color: #474747; color: #ffffff; border-collapse: collapse;><tr style='border: 1px solid'><th  style='border: 1px solid'>Name</th><th style='border: 1px solid'>Email</th></tr>{html}</table>"
     return html
     #response = {'Results': Results, 'count': len(Results)}
     #ret = app.response_class(
