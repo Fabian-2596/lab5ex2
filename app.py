@@ -11,7 +11,7 @@ CORS(app)
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'a'
 app.config['MYSQL_DB'] = 'student'
-app.config['MYSQL_HOST'] = '34.67.193.225'
+app.config['MYSQL_HOST'] = '35.246.117.226'
 mysql.init_app(app)
 
 
@@ -78,4 +78,5 @@ def update():
 
 
 if __name__ == "__main__":
+    app.debug = True
     app.run(host='0.0.0.0', port='8080')  # Run the flask app at port 8080
